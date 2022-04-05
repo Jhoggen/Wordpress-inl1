@@ -1,7 +1,7 @@
 /*
 Theme Name: Labb1
 Text Domain: Labb1
-Version: 1.0
+Version: 1.5
 Description: Theme for learning
 Author: Jacob Hoggen
 */
@@ -97,6 +97,7 @@ textarea {
 		}
 
 			#header form input[type="text"] {
+    
 			}
 
 			#header form input[type="submit"] {
