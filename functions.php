@@ -3,6 +3,8 @@
 function labb_theme_support() {
     //dynamisk titel
     add_theme_support('title-tag');
+    add_theme_support('widgets');
+    add_theme_support('post-thumbnails');
 }
 add_action('after_theme_support', 'labb_theme_support');
 
@@ -16,6 +18,18 @@ add_action('after_theme_support', 'labb_theme_support');
 //     register_nav_menus($locations);
 // }
 // add_action('init', 'labb_menus');
+
+
+
+//lägg till widget
+
+register_sidebar(
+    [
+        'name' => 'widget1',
+        'id' => 'widget1',
+        'description' => 'this is a widget'
+    ]    
+);
 
 
 //menyer

@@ -1,0 +1,5 @@
+<?php
+
+//styla search form
+
+?>

@@ -15,7 +15,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-8 col-sm-6">
-						<a class="logo" href="index.html"><?php the_title(); ?></a>
+						<a class="logo" href="/">Labb 1</a>
 					</div>
 					<div class="col-sm-6 hidden-xs">
 						<form id="searchform" class="searchform">
@@ -46,13 +46,11 @@
 			</form>
 		</div>
 
-
-
-
-		<nav id="nav">
+        <nav id="nav">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
+
 
                         <?php
                             wp_nav_menu(
