@@ -1,41 +1,14 @@
 <?php
 
 function labb_theme_support() {
-    //dynamisk titel
     add_theme_support('title-tag');
     add_theme_support('widgets');
     add_theme_support('post-thumbnails');
+    add_theme_support('menus');
 }
 add_action('after_theme_support', 'labb_theme_support');
 
 
-// function labb_menus(){
-
-//     $locations = array(
-//         'primary' => "Header Primary Nav Menu",
-//         'footer' => "Footer Nav Menu"
-//     );
-//     register_nav_menus($locations);
-// }
-// add_action('init', 'labb_menus');
-
-
-
-//search form
-
-// function get_search_form() {
-
-// }
-
-//lägg till widget
-
-register_sidebar(
-    [
-        'name' => 'widget1',
-        'id' => 'widget1',
-        'description' => 'this is a widget'
-    ]    
-);
 
 
 //menyer
@@ -44,8 +17,45 @@ function labb_menus() {
     register_nav_menu('header_nav', 'Header menu');
     register_nav_menu('footer_nav', 'Footer menu');
     register_nav_menu('subpage_menu', 'Subpage menu');
+    register_nav_menu('blog_sidor', 'blogmenus-sidor');
+    register_nav_menu('blog_kategorier', 'blogmenus-kategorier');
+    register_nav_menu('blog_akriv', 'blogmenus-arkiv');
 }
 add_action('after_setup_theme', 'labb_menus');
+
+
+
+
+//lägg till widget
+
+function labb_register_sidebars() {
+
+    register_sidebar(
+        [
+            'name' => 'sidor-blogsidebar',
+            'id' => 'sidor_blogsidebar',
+        ] 
+    );
+
+    register_sidebar(
+        [
+            'name' => 'kategori-blogsidebar',
+            'id' => 'kategori_blogsidebar',
+        ]
+    );
+
+        register_sidebar(
+            [
+                'name' => 'arkiv-blogsidebar',
+                'id' => 'arkiv_blogsidebar',
+            ]
+        );
+}
+add_action( 'widgets_init', 'labb_register_sidebars' );
+
+
+
+
 
 
 
