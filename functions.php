@@ -21,6 +21,12 @@ add_action('after_theme_support', 'labb_theme_support');
 
 
 
+//search form
+
+// function get_search_form() {
+
+// }
+
 //lägg till widget
 
 register_sidebar(

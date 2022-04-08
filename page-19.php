@@ -5,26 +5,13 @@ get_header();
 			<section>
 				<div class="container">
 					<div class="row">
-						<div id="primary" class="col-xs-12 col-md-9">
+						<div class="col-xs-12 col-sm-8 col-md-6">
 							<h1><?php the_title(); ?></h1>
-							  <p><?php the_content(); ?></p>
+							<p><?php the_content(); ?></p>
 						</div>
-						<!-- <aside id="secondary" class="col-xs-12 col-md-3">
-							<ul class="side-menu">
-								<li>
-									<a href="undersida.html">Undersida</a>
-								</li>
-								<li>
-									<a href="undersida2.html">Undersida 2</a>
-								</li>
-								<li>
-									<a href="undersida3.html">Undersida 3</a>
-								</li>
-								<li>
-									<a href="undersida4.html">Undersida 4</a>
-								</li>
-							</ul>
-						</aside> -->
+						<div class="col-xs-12 col-sm-4 col-md-6">
+							<?php the_post_thumbnail(); ?>
+						</div>
 					</div>
 				</div>
 			</section>
