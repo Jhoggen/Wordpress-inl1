@@ -9,6 +9,9 @@ function labb_theme_support() {
 add_action('after_theme_support', 'labb_theme_support');
 
 
+//add image size
+
+add_image_size('custom-size', 555, 555, true);
 
 
 //menyer
