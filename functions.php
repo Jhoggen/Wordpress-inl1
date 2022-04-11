@@ -89,6 +89,9 @@ add_action( 'widgets_init', 'labb_register_sidebars' );
 
 
 
+
+
+
 //style.css
 function labb_register_styles() {
 
