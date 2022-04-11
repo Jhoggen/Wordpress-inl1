@@ -427,7 +427,9 @@ article .meta {
 	border: solid 1px black;
 	border-top: solid 2px crimson;
 	color: white;
+    
 }
+
 
 	#sidebar > ul {
 		border-bottom: solid 1px black;
@@ -448,6 +450,33 @@ article .meta {
 				#sidebar > ul > li > ul > li {
 					list-style: none;
 				}
+#marker {
+	list-style-type: none;
+}
+
+#block-38 {
+	list-style-type: none;
+}
+#block-39 {
+	list-style-type: none;
+}
+
+#block-40 {
+	list-style-type: none;
+}
+#block-41 {
+	list-style-type: none;
+}
+#block-42 {
+	list-style-type: none;
+}
+#block-43 {
+	list-style-type: none;
+}
+#block-44 {
+	list-style-type: none;
+}
+
 
 	#sidebar h2 {
 		font-size: 20px;

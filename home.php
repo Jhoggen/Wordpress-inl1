@@ -28,7 +28,8 @@ get_header();
 							            </li>
 							            <li>
 								            <i class="fa fa-tag"></i>
-								            <a href="<?php echo get_permalink(); ?>"><a href=" <?php the_category(); ?>"> </a> 
+								           
+                                            <a href="<?php echo get_permalink(); ?>"><?php the_tags(''); ?></a> 	
 							            </li> 
 						            </ul>
 								

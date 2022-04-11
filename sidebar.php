@@ -10,30 +10,18 @@
 		
 		<ul role="navigation">
 			<li class="pagenav">
-				<?php dynamic_sidebar('sidor-blogsidebar'); ?>
-
-				<?php
-					wp_nav_menu(array(
-						'theme_location' => 'sidor-blogsidebar',
-						'menu_class' => 'menu',
-					));
-				?>
-
+				<?php dynamic_sidebar('blogmenus-sidor'); ?>
             </li>
-			<?php
-				dynamic_sidebar('arkiv-blogsidebar');
-			?>
 
+			<li>
+			<?php
+				dynamic_sidebar('blogmenus-arkiv');
+			?>
+			</li>
 
 			<li class="categories">
 			<?php
-				dynamic_sidebar('kategori-blogsidebar');
-			?>
-			<?php 
-			wp_nav_menu(array(
-				'theme_location' => 'kategori-blogsidebar',
-				'menu_class' => 'menu',
-			));
+				dynamic_sidebar('blogmenus-kategori');
 			?>
 			</li>
 		
