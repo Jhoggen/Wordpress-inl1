@@ -20,6 +20,7 @@ function labb_menus() {
     register_nav_menu('header_nav', 'Header menu');
     register_nav_menu('footer_nav', 'Footer menu');
     register_nav_menu('subpage_menu', 'Subpage menu');
+    register_nav_menu('bloggpage_menu', 'Blogpage menu');
 }
 add_action('after_setup_theme', 'labb_menus');
 
@@ -29,6 +30,7 @@ add_action('after_setup_theme', 'labb_menus');
 //lägg till widget
 
 function labb_register_sidebars() {
+    
     //blogsidebar
     register_sidebar(
         [

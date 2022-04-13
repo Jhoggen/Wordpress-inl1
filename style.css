@@ -1,6 +1,6 @@
 /*
-Theme Name: Labb1
-Text Domain: Labb1
+Theme Name: Labb 1
+Text Domain: Labb 1
 Version: 1.5
 Description: Theme for learning
 Author: Jacob Hoggen
@@ -54,6 +54,7 @@ input[type="submit"] {
 textarea {
 	min-width: 200px;
 }
+
 
 /* Header styles
 ------------------------------------------------------------------ */
@@ -427,7 +428,7 @@ article .meta {
 	border: solid 1px black;
 	border-top: solid 2px crimson;
 	color: white;
-    
+    text-decoration: none;
 }
 
 
@@ -476,6 +477,8 @@ article .meta {
 #block-44 {
 	list-style-type: none;
 }
+
+li
 
 
 	#sidebar h2 {
